@@ -155,7 +155,7 @@ body {
     vertical-align: middle;
 }
 
-.text-vertical-center h1 {
+h1 {
     margin: 0;
     padding: 0;
     font-size: 4.5em;
@@ -255,6 +255,10 @@ hr.small {
 
 }
 
+.index-thumb:hover{
+	opacity:0.8;
+}
+
 .carousel-inner .active.left { 
 	left: -20%; 
 } 
@@ -265,9 +269,6 @@ hr.small {
 	background-image:none;
 	padding: 0% 10% 0% 10%;
 }
-.col-lg-2 {
-	width: 75%;
-} 
 
 img {
  width: 100%; 
@@ -283,11 +284,12 @@ img {
   height:auto;
 }
 
+
 .overlay { 
   color:#fff;
   position:absolute;
   z-index:12;
-  top:50%;
+  top:40%;
   left:0;
   width:100%;
   text-align:center;
@@ -300,9 +302,3 @@ footer {
 	margin-top:50px;
 }
 
-#to-top {
-  display: none;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
-}
