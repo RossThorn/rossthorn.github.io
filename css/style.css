@@ -235,7 +235,7 @@ hr.small {
 	position:static; 
 	display:block; 
 	width:auto; 
-  top: 50%;
+	top: 50%;
 } 
 .carousel-control .glyphicon-chevron-left:before { 
 	margin-left:0; 
@@ -267,7 +267,7 @@ hr.small {
 } 
 .carousel-control.left,.carousel-control.right {
 	background-image:none;
-	padding: 0% 10% 0% 10%;
+	padding: 0% 5% 0% 5%;
 }
 
 img {
