@@ -179,7 +179,7 @@ body {
 
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url(../images/TopoMuted.png);
+    background: url(../images/TopoMutedLT.png);
 }
 
 .text-vertical-center {
@@ -195,9 +195,24 @@ h1 {
     font-size: 8em;
     font-weight: 700;
     /*color:#E5E5E5;*/
-    background-color: #b3b3b3;
+    background-color: #353535;
     color: transparent;
-    text-shadow: 0px 2px 1px rgba(255,255,255,.75);
+    text-shadow: 0px 2px 1px rgba(255,255,255,0.9);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: myFont;
+    font-size: 6em;
+    font-weight: 700;
+    /*color:#E5E5E5;*/
+    background-color: #353535;
+    color: transparent;
+    text-shadow: 0px 2px 1px rgba(255,255,255,0.9);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -290,20 +305,21 @@ hr.small {
   max-height: 500px !important;
   min-width: 227px;
   min-height: 100%;
-  border-radius: 5% !important;
-  /*box-shadow:2px 2px 5px gray;*/
+  border-radius: 1% !important;
   z-index: 1000;
 
 }
 .index-thumb{
-  /*box-shadow: 0 10px 10px rgba(271, 99, 78, .2);*/
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
 	max-width: 227px;
+  transition: box-shadow .3s;
+
 }
 
 .index-thumb:hover{
 	/*opacity:0.8;*/
-  /*box-shadow: 0 40px 40px rgba(0, 0, 0, .2)*/
-	max-width: 227px;
+  box-shadow: 0 40px 40px rgba(0, 0,0,0.5)
+	/*max-width: 227px;*/
 }
 
 .carousel-inner .active.left {
