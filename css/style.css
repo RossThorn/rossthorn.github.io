@@ -13,7 +13,7 @@ a {
   left: 0;
   width: 100%;
   z-index: 3;
-  font-family: fantasy;
+  font-family: sans-serif;
   background: transparent;
   opacity:0.9;
   border-bottom: 1px solid;
@@ -34,6 +34,7 @@ a {
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
+  font-family: sans-serif;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1px;
@@ -44,13 +45,14 @@ a {
   .navbar-custom .navbar-brand {
     /*color: white;*/
     padding: 20px;
+
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
     color: rgba(255, 255, 255, 0.8);
   }
   .navbar-custom .nav li a {
-    /*color: white;*/
+    color: white;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
@@ -110,6 +112,11 @@ a {
 @media (max-width: 768px) {
    .port-img {
      max-width:100%;
+   }
+
+   .navbar-custom{
+     background: white;
+     color:#333333 !important;
    }
 
 }
@@ -218,6 +225,20 @@ h2 {
     background-clip: text;
 }
 
+h3 {
+    margin: 0;
+    padding: 0;
+    font-family: myFont;
+    font-size: 3em;
+    font-weight: 700;
+    color:#E5E5E5;
+    /*background-color: #353535;
+    color: transparent;
+    text-shadow: 0px 2px 1px rgba(255,255,255,0.9);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;*/
+}
 
 
 /* Custom Button Styles */
@@ -300,6 +321,7 @@ hr.small {
 }
 
 .carousel-inner{
+  display: inline-block;
   height: 100%;
   max-width: 500px;
   max-height: 500px !important;
@@ -307,6 +329,7 @@ hr.small {
   min-height: 100%;
   border-radius: 1% !important;
   z-index: 1000;
+  margin-bottom: 50px;
 
 }
 .index-thumb{
