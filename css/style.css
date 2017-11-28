@@ -29,7 +29,7 @@ border-width: thick;
   position: relative;
 height: 400px !important;
 width: 480px !important;
-padding:30px;
+margin:30px 0;
 }
 
 /*.project:hover img{
@@ -397,7 +397,7 @@ footer {
 }
 
 #subtitle {
-    margin: 0;
+    margin-top:20px;
     padding: 0;
     font-family: myFont;
     font-size: 4em;
