@@ -6,6 +6,7 @@ a {
    font-family: myFont;
    src: url('../fonts/Code_Pro_Demo.otf');
 }
+
 .projects{
   display:flex;
   justify-content:space-around;
@@ -32,10 +33,6 @@ width: 480px !important;
 margin:30px 0;
 }
 
-/*.project:hover img{
-  box-shadow: 0 40px 40px rgba(0, 0,0,0.5);
-
-}*/
 
 .navbar-custom {
   position: absolute;
@@ -44,10 +41,9 @@ margin:30px 0;
   width: 100%;
   z-index: 3;
   font-family: sans-serif;
+  border: 0px;
   background: transparent;
   opacity:0.9;
-  border-bottom: 1px solid;
-  border-color: #6e2f32;
 
 }
 .navbar-custom .navbar-brand {
@@ -110,8 +106,6 @@ margin:30px 0;
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -61px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid #f2f2f2;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
@@ -158,7 +152,6 @@ margin:30px 0;
     position: relative;
     width: 100%;
     height: 100%;
-    border-bottom: 2px;
 }
 
 .subheader {
@@ -183,6 +176,7 @@ margin:30px 0;
 h3,h4 {
 	text-align:left;
   color:#6e2f32;
+
 }
 
 h4 {
@@ -238,12 +232,7 @@ h1 {
     font-size: 8em;
     font-weight: 700;
     color:#6e2f32;
-    /*background-color: #000000;
-    color: transparent;
-    text-shadow: 0px 2px 1px rgba(255,255,255,0.9);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;*/
+
 }
 
 h2 {
@@ -253,99 +242,23 @@ h2 {
     font-size: 6em;
     font-weight: 700;
     color:#6e2f32;
-    /*background-color: #353535;
-    color: transparent;
-    text-shadow: 0px 2px 1px rgba(255,255,255,0.9);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;*/
+
 }
 
 h3 {
     margin: 0;
     padding: 0;
-    font-family: myFont;
+    font-family: 'Open Sans', sans-serif;
     font-size: 3em;
     font-weight: 700;
     color:#6e2f32;
 }
 
 
-/* Custom Button Styles */
-
-.btn-dark {
-    border-radius: 0;
-    color: #fff;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
-    color: #fff;
-    background-color: rgba(0,0,0,0.7);
-}
-
-.btn-light {
-    border-radius: 0;
-    color: #333;
-    background-color: rgb(255,255,255);
-}
-
-.btn-light:hover,
-.btn-light:focus,
-.btn-light:active {
-    color: #333;
-    background-color: rgba(255,255,255,0.8);
-}
-
-/* Custom Horizontal Rule */
-
-hr.small {
-    max-width: 100px;
-}
-
-
-.toggle {
-    margin: 5px 5px 0 0;
-}
-
-.embed-responsive {
-  width: 80%;
-}
-
-/* Portfolio
-
-.portfolio {
-    padding: 50px 0;
-}
-
-.portfolio-item {
-    margin-bottom: 30px;
-}
-
-.img-portfolio {
-    margin: 0 auto;
-}
-
-.img-portfolio:hover {
-    opacity: 0.8;
-}
-*/
-
 
 .index-thumb{
-  /*box-shadow: 0 10px 10px rgba(0, 0, 0, .2);*/
 	max-width: 227px;
-  /*transition: box-shadow .3s;*/
-
 }
-
-/*.index-thumb:hover{
-	opacity:0.8;
-  box-shadow: 0 40px 40px rgba(0, 0,0,0.5)
-	max-width: 227px;
-}*/
 
 
 img {
@@ -389,6 +302,7 @@ footer {
 	margin-top:50px;
   /*background-color:#353535;*/
   width: 100%;
+  border: 0px;
 }
 
 #title {
@@ -409,4 +323,8 @@ footer {
 
 .text-muted {
   color:#3b4353;
+}
+
+body {
+  /*overflow: hidden;*/
 }
