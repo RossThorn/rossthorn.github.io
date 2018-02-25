@@ -43,6 +43,14 @@ body {
   padding-right: 10px;
 }
 
+#about:hover{
+  text-decoration: none;
+}
+
+#about:hover h3{
+  color: #209e95;
+}
+
 
 /* Portfolio */
 
@@ -54,14 +62,14 @@ body {
   width: 100%;
   margin: 0px;
   font-size: 0;
+  display: block;
 }
 
 .port-image{
   height:100%;
-  width:33%;
+  width:100%;
 }
 .port-image img{
-  display:inline-block;
   width:33%;
   height: auto;
 }
