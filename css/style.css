@@ -23,7 +23,7 @@ body {
   height: 5%;
   width: 100%;
   background-color: #c5ddda;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 #title-thorn{
@@ -41,6 +41,18 @@ body {
   display: inline-block;
   padding-top: 50px;
   padding-right: 10px;
+}
+
+#home:hover {
+  text-decoration: none;
+}
+
+#home:hover h1{
+  color: #298c91;
+}
+
+#home:hover #title-thorn{
+  color:#e67553;
 }
 
 #about:hover{
@@ -62,7 +74,10 @@ body {
   width: 100%;
   margin: 0px;
   font-size: 0;
-  display: block;
+  display: inline-block;
+  display:flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
 }
 
 .port-image{
@@ -70,7 +85,8 @@ body {
   width:100%;
 }
 .port-image img{
-  width:33%;
+  width: 33.33%;
+  width: calc(100% / 3);
   height: auto;
 }
 
@@ -80,18 +96,6 @@ body {
     vertical-align: middle;
 }
 
-.text {
-  font-family: myFont;
-  white-space: nowrap;
-  color: white;
-  font-size: 25px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
 
 
 h1 {
@@ -123,8 +127,46 @@ h3 {
     color:#dbcac6;
 }
 
+.project img{
+  width: 100%;
+}
 
+.project:hover .overlay{
+  opacity: 0.8;
+}
 
+.project {
+  width: 33.33%;
+  width: calc(100% / 3);
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #209e95;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: .7s ease;
+}
+
+.overlay-text {
+  padding-left: 1vw;
+  font-size: 4vw;
+  font-family: myFont;
+  color: #ededed;
+}
+
+/* Project Pages */
+
+.project-title {
+  text-align: center;
+}
 
 .russian-frame{
   position: inherit;
