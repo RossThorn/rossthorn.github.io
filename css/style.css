@@ -148,6 +148,10 @@ h4 {
 
 /* Project Pages */
 
+.project-page {
+  padding:25px;
+}
+
 .project-title {
   text-align: center;
 }
@@ -172,14 +176,13 @@ h4 {
   margin-bottom: 50px;
 }
 
-.D3-frame{
+#D3-frame{
   position: inherit;
   vertical-align:middle;
   align: center;
   margin-left: 5%;
   height:590px;
   width: 90%;
-  margin-bottom: 50px;
 }
 
 .project-button {
