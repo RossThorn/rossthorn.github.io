@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>NORTHORN MAPS - Ross Thorn</title>
+    <title>D3 Coordinated Visualization - Ross Thorn</title>
     <link rel="icon" href="images/favicon.ico">
     <meta charset=utf-8>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -13,50 +13,46 @@
   </head>
   <body>
 
-  	<div id="navbar"></div>
-	<!-- Header -->
-    <header id="top" class="subheader">
-      <div class="text-vertical-center">
-		  <h2 style="margin-left: 50px;">D3 Coordinated<br>Vizualization</h2>
+    <div id="header">
+      <div id="title">
+        <a href="index.html" id="home">
+        <h1>ROSS<span id="title-thorn">THORN</span></h1>
+      </a>
       </div>
-    </header>
+      <a href="about.html"id="about">
+        <h3>ABOUT</h3>
+      </a>
+    </div>
+    <div class="bar"></div>
 
-	<div class="container-fluid container-project" style="padding: 50px;" align=center>
-    <div class="row">
-		  <div class='col-md-6 col-xs-12'>
+    <div class="container-fluid"align=center>
+  		  <div class="col-xs-12 project-page">
+          <h2>D3 <span style="color:#e67553;">COORDINATED</span> VISUALIZATION</h2>
+           </div>
 
-            <div class="thumb">
-
-             <img src="images/d3viz.png">
-
+           <div class="col-xs-12"style="padding-bottom:25px;">
+             <h4> <a href="https://d3js.org/" target="_blank">D3</a> is a Javascript library which offers a myriad of possibilities for data visualization.
+               While D3 offers interactive mapping capabilities, some interactions are a bit less intuitive than other libraries (e.g., <a href="https://leafletjs.com" target="_blank">Leaflet.js</a>).
+               However, D3 gives you the ability to easily link your map to another visualization drawn from the same data.<br><br>
+             I decided to try out a donut chart as a coordinated vizualization. As you hover over a state on the map, the corresponding wedge in the chart is also highlighted and vice versa. The hardest part was taking the example from <a href="https://bl.ocks.org/" target="_blank">the online repository of D3 visualizations</a>
+             and adapting it to work with the newest version of D3 (the example I found was written for v3 and I was using v4). One problem I still have to fix is overlapping labels with certain data.<br><br>
+             This map was fun to create and I learned a lot about D3. I'm currently using D3 vizualizaitons and Leaflet to visualize large volumes of pollen data from the <a href="https://www.neotomadb.org/">Neotoma database</a>
+             in the mobile app, <a href="http://fc.umn.edu/" target="_blank">Flyover Country</a>.<br><br>
+             Feel free to explore the visualization below!
             </div>
 
 
-        </div>
-      <div class='col-md-6 col-xs-12 text-box'>
-        <h4 style="margin-top:0px;"><a href="https://d3js.org/" target="_blank">D3</a> is a Javascript library which offers a myriad of possibilities for data visualization.
-          While D3 offers interactive mapping capabilities, some interactions are a bit less intuitive than other libraries (e.g., <a href="https://leafletjs.com" target="_blank">Leaflet.js</a>).
-          However, D3 gives you the ability to easily link your map to another visualization drawn from the same data.<br><br>
-        I decided to try out a donut chart as a coordinated vizualization. As you hover over a state on the map, the corresponding wedge in the chart is also highlighted and vice versa. The hardest part was taking the example from <a href="https://bl.ocks.org/" target="_blank">the online repository of D3 visualizations</a>
-        and adapting it to work with the newest version of D3 (the example I found was written for v3 and I was using v4). One problem I still have to fix is overlapping labels with certain data.<br><br>
-        This map was fun to create and I learned a lot about D3. I'm currently using D3 vizualizaitons and Leaflet to visualize large volumes of pollen data from the <a href="https://www.neotomadb.org/">Neotoma database</a>
-        in the mobile app, <a href="http://fc.umn.edu/" target="_blank">Flyover Country</a>.<br><br>
-        Feel free to explore the visualization below!
-      </h4>
-       </div>
-    </div>
-		</div>
+      </div>
 
-     <iframe src="https://rossthorn.github.io/d3-coordinated-viz/" class="D3-frame"></iframe>
-     <a class="button-container"href="index.html#portfolio"align=center>
-     <div class="project-button">
-       <span class="button-text">Back to Portfolio</span>
+
+     <iframe src="https://rossthorn.github.io/d3-coordinated-viz/" id="D3-frame"></iframe>
+     <div class="col-xs-12 project-button">
+       <p style="color:#dbcac6; padding:10px;">Copyright &copy; Ross Thorn 2016-2018</p>
+       <h3><a href="index.html"class="button-text">HOME</a> // <a href="#header" class="button-text">TOP</a></h3>
      </div>
-   </a>
 </body>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script  src="js/includes.js"></script>
-	<script src="js/smooth-scroll.js"></script>
-	<div id="footer"></div>
+
 </html>

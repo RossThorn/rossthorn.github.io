@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>NORTHORN MAPS - Ross Thorn</title>
+    <title>Human Trafficking At Home - Ross Thorn</title>
     <link rel="icon" href="images/favicon.ico">
     <meta charset=utf-8>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -13,50 +13,46 @@
   </head>
   <body>
 
-  	<div id="navbar"></div>
-	<!-- Header -->
-    <header id="top" class="subheader">
-      <div class="text-vertical-center">
-		  <h2 style="margin-left: 50px;">Human Trafficking<br>in the United States</h2>
+    <div id="header">
+      <div id="title">
+        <a href="index.html" id="home" alt="Home">
+        <h1>ROSS<span id="title-thorn">THORN</span></h1>
+      </a>
       </div>
-    </header>
+      <a href="about.html"id="about">
+        <h3>ABOUT</h3>
+      </a>
+    </div>
+    <div class="bar"></div>
+    <div class="container-fluid" align=center>
+  		  <div class='col-xs-12 project-page'>
+          <h2>HUMAN <span style="color:#e67553;">TRAFFICKING</span> AT <span style="color:#e67553;">HOME</span></h2>
+           </div>
 
-	<div class="container-fluid container-project" style="padding: 50px;" align=center>
-    <div class="row">
-		  <div class='col-md-6 col-xs-12'>
-
-            <div class="thumb">
-
-             <img src="images/HT2.png">
-
+           <div class='col-xs-12'style="padding-bottom:25px;">
+             <h4> This map was designed as a terrain representation map for an advanced cartography course at the University of Wisconsin - Madison.
+     			I thought that it would be cool to base the route on the movie Forrest Gump and his first run across the country.<br><br>
+     			I created the hillshade in ArcMap using the spatial analyst extension from DEMs from <a href="http://viewfinderpanoramas.org/">Viewfinder Panoramas</a>.
+     			Physical feature data was acquired from <a href="http://www.naturalearthdata.com/">Natural Earth</a>. I finished the map with Adobe PhotoShop, editing the landcover and hillshade, and Illustrator,
+     			adding the final vector elements.
+     			<br><br>
+     			One of my favorite challenges from this map was due to the orientation (east up). We tend to always see the United States with north pointing up,
+     			thus the labels typically run east-west. Finding places where the labels seemed centered and fit well in the state shape while running north-south
+     			was an interesting aspect in the creation of this map. The full map is shown below. </h4>
             </div>
 
-
-        </div>
-      <div class='col-md-6 col-xs-12 text-box'>
-        <h4 style="margin-top:0px;">This interactive map story sheds light on the travesty of human trafficking in the United States.
-          Modern day slavery affects millions of people in today's world, even in a first-world country like the US. We created this map rooted in
-          emotional cartographic theory.<br><br> During the creation of this map, we collaborated with and interviewed several experts who work to
-          combat human trafficking domestically and abroad. We designed this project to promote empathy and really embed the user in the mapping story,
-          showing that human trafficking occurs where they are.<br><br>I encourage you to take some time and explore the project below, as it is a great
-          resource for learning more about the worldwide crime. It is much more than just a portfolio piece.<br><br>
-          Collaborators: <a href="https://leanneabraham.github.io" target="_blank">Leanne Abraham</a> & <a href="https://aliciaaiverson.github.io" target="_blank">Alicia Iverson</a>
-          <br><br>Interact with the map below or view full screen <a href="https://rossthorn.github.io/human-trafficking-viz">here</a>.
-    </h4>
-       </div>
-    </div>
-		</div>
+          </div>
+    <div class="container-fluid">
 
      <iframe src="https://rossthorn.github.io/human-trafficking-viz" class="trafficking-frame"></iframe>
-     <a class="button-container"href="index.html#portfolio"align=center>
-     <div class="project-button">
-       <span class="button-text">Back to Portfolio</span>
+     <div class="col-xs-12 project-button">
+       <p style="color:#dbcac6; padding:10px;">Copyright &copy; Ross Thorn 2016-2018</p>
+       <h3><a href="index.html"class="button-text">HOME</a> // <a href="#header" class="button-text">TOP</a></h3>
      </div>
-   </a>
 </body>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script  src="js/includes.js"></script>
-	<script src="js/smooth-scroll.js"></script>
-	<div id="footer"></div>
+
+
 </html>
