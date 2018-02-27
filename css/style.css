@@ -115,6 +115,7 @@ h4 {
 }
 
 .project-image {
+  height:100%;
   width:100%;
 }
 
@@ -124,6 +125,10 @@ h4 {
 
 .project-hover:hover .overlay{
   opacity: 0.8;
+}
+
+.project-hover:hover .overlay{
+  opacity: 0.9;
 }
 
 .overlay {
@@ -141,6 +146,7 @@ h4 {
 }
 
 .overlay-text {
+  position: relative;
   padding-left: 1vw;
   font-size: 4vw;
   font-family: myFont;
@@ -158,6 +164,16 @@ h4 {
 }
 
 .russian-frame{
+  position: inherit;
+  vertical-align:middle;
+  align: center;
+  margin-left: 20%;
+  height:700px;
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.fcvs-frame{
   position: inherit;
   vertical-align:middle;
   align: center;
