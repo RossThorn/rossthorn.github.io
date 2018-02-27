@@ -14,7 +14,7 @@ $(function(){
         foot.style.height = x[0].style.height;
       } else {
         // number of projects is divisible by 2 but not 3.
-        foot.className += " col-md-4 col-sm-6 col-xs-12";
+        foot.className += " col-md-4 col-xs-12";
         foot.style.height = x[0].style.height;
       };
     } else {
