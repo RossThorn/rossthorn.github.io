@@ -114,6 +114,7 @@ h4 {
   padding: 0px;
 }
 
+
 .project-image {
   height:100%;
   width:100%;
@@ -151,6 +152,16 @@ h4 {
   font-size: 4vw;
   font-family: myFont;
   color: #ededed;
+}
+
+#index-foot{
+vertical-align:middle;
+display:inline;
+height:100%;
+}
+
+#index-foot h1{
+font-size: 7em;
 }
 
 /* Project Pages */
