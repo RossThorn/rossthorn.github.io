@@ -227,15 +227,15 @@ font-size: 7em;
   text-decoration: none;
 }
 
-/* .button-text:hover #footer-ross{
-  color: #298c91;
+ .button-text {
+  color:#dbcac6;
 }
-
+/*
 .button-text:hover #footer-thorn{
   color:#e67553;
 } */
 
-.button-text:hover h3{
+.button-text:hover{
   color: #298c91;
 }
 
