@@ -152,9 +152,9 @@ h4 {
 }
 
 #index-foot{
-vertical-align:middle;
-display:inline;
-height:100%;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #index-foot h1{
@@ -217,6 +217,9 @@ font-size: 7em;
 
 .project-button:hover {
   text-decoration: none;
+}
+
+#footer-center{
 }
 
 #footer-thorn {
