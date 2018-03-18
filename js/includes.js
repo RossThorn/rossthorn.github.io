@@ -40,5 +40,4 @@ $( window ).resize(function() {
   height = height + 'px';
   var foot = document.getElementById("index-foot");
   foot.style.height = height;
-  console.log("resizing footer");
 });
