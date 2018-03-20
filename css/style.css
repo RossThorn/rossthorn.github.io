@@ -12,6 +12,8 @@
 a {
   color: #e67553;
 }
+
+
 html,
 body {
     width: 100%;
@@ -69,7 +71,7 @@ body {
 }
 
 #about:hover h3{
-  color: #298c91;
+  color:#ba9991;
 }
 
 
@@ -219,7 +221,8 @@ font-size: 7em;
   text-decoration: none;
 }
 
-#footer-center{
+#footer-center:hover h3{
+  color:#ba9991;
 }
 
 #footer-thorn {
@@ -239,7 +242,7 @@ font-size: 7em;
 } */
 
 .button-text:hover{
-  color: #298c91;
+  color:#ba9991;
 }
 
 
