@@ -13,7 +13,6 @@ a {
   color: #e67553;
 }
 
-
 html,
 body {
     width: 100%;
@@ -148,6 +147,7 @@ h4 {
 .overlay-text {
   position: relative;
   padding-left: 1vw;
+  /* font-size: 60px; */
   font-size: 4vw;
   font-family: myFont;
   color: #ededed;
