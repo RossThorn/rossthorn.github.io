@@ -12,6 +12,7 @@
 a {
   color: #e67553;
 }
+
 html,
 body {
     width: 100%;
@@ -69,7 +70,7 @@ body {
 }
 
 #about:hover h3{
-  color: #298c91;
+  color:#ba9991;
 }
 
 
@@ -146,15 +147,16 @@ h4 {
 .overlay-text {
   position: relative;
   padding-left: 1vw;
+  /* font-size: 60px; */
   font-size: 4vw;
   font-family: myFont;
   color: #ededed;
 }
 
 #index-foot{
-vertical-align:middle;
-display:inline;
-height:100%;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #index-foot h1{
@@ -219,6 +221,10 @@ font-size: 7em;
   text-decoration: none;
 }
 
+#footer-center:hover h3{
+  color:#ba9991;
+}
+
 #footer-thorn {
   color: #298c91;
 }
@@ -236,7 +242,7 @@ font-size: 7em;
 } */
 
 .button-text:hover{
-  color: #298c91;
+  color:#ba9991;
 }
 
 
