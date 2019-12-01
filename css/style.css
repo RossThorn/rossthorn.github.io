@@ -246,5 +246,9 @@ font-size: 7em;
   color:#ba9991;
 }
 
+.description {
+  text-align: left;
+}
+
 
 /* Test Section */

@@ -18,7 +18,7 @@ $(function(){
         // number of projects is divisible by 2 but not 3.
         foot.className += " col-md-4 col-xs-12";
 
-      };
+      }
     } else {
       if(x.length % 2 != 0){
         // number of projects is divisible by 3 but not 2.
@@ -28,7 +28,7 @@ $(function(){
         // number of projects is divisible by 2 and 3.
         foot.className += " col-xs-12";
 
-      };
+      }
     }
 
     //$("#navbar").load("navbar.html");
