@@ -105,10 +105,11 @@ h3 {
 }
 
 h4 {
-  font-size: 1.75vw;
+  font-size: 2em;
   font-family: "Open Sans";
   color: #298c91;
 }
+
 /* Portfolio */
 
 .container-fluid {
