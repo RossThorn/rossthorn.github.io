@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactive Fantasy Web Maps - Ross Thorn</title>
+    <link rel='icon' href='images/Icon.ico'>
+    <meta charset=utf-8>
+    <link rel='stylesheet' href='css/bootstrap.min.css' />
+    <link rel='stylesheet' href='css/bootstrap-theme.min.css' />
+    <link rel='stylesheet' href='css/style.css' />
+    <link href='font-awesome/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans' />
+
+  </head>
+  <body>
+
+    <div id='header'>
+      <div id='title'>
+        <a href='index.html' id='home'>
+        <h1>ROSS<span id='title-thorn'>THORN</span></h1>
+      </a>
+      </div>
+      <a href='about.html'id='about'>
+        <h3>ABOUT</h3>
+      </a>
+    </div>
+    <div class='bar'></div>
+
+	<div class='container-fluid' align=center>
+
+    <div class='col-xs-12 project-page'>
+      <h2>INTERACTIVE <span style='color:#e67553;'>FANTASY</span> WEB <span style='color:#e67553;'>MAPS</span></h2>
+       </div>
+
+      <div class='col-xs-11 description'style='padding-bottom:25px; float:none;'>
+        <h4>After creating <a href="fantasy.html">a fantasy map</a> for a D&D campaign I was playing in, I wanted to try to take our map experience
+        to another level. We had a physical map that I had printed for our Dungeon Master, but I thought it would be cool to make an interactive version of it
+        so my friends and I could pull it up on our phones or laptops to reference during a session.
+        <br><br>
+        I decided to use <a href="https://www.mapbox.com">Mapbox</a> to accomplish my goal. I made a less stylized version of the map designed for print
+        and brought it into <a href="https://www.qgis.org">QGIS</a> (my mapping software) to apply some coordinates to the image so the web mapping software
+        could recognize it and put it on earth. This allowed me to create a georeferenced raster, much like satellite imagery, which isn't much more than
+        pictures with coordinates that allow you to place them in the correct location. I also created a geoJSON file for all the cities and points of interest to add those to the map and allow for 
+        popups with more information about the locations. I created a raster <a href="https://docs.mapbox.com/studio-manual/reference/tilesets/">tileset</a> from the georeferenced map 
+        and a <a href="https://docs.mapbox.com/studio-manual/reference/styles/">style</a> to reference in a web page. With a little web development,<strong><i> I created my
+        first interactive fantasy map!</i></strong></h4> 
+       </div>
+    </div>
+
+    <div class='container-fluid' align=center>
+      <img style='box-shadow:0px 0px 2px gray; width:50%;' src='images\initialmap.gif' >
+        </div>
+
+    <div class='container-fluid' align=center>
+      <div class='col-xs-11 description'style='padding:25px 0px 25px 0px; float:none;'>
+        <h4>I was thrilled that I got it to work the way I wanted. However, I wasn't pleased with the overall map aesthetic and the lack of flexibility with the colors
+          and other style choices. Luckily, <a href="https://docs.mapbox.com/vector-tiles/reference/">vector tiles</a> exist and allow for exactly what I was missing. 
+          I began the long process of digitizing the landmass in QGIS and created my first vector tileset and style with my new data! Along with the landmass,
+          I digitized different landcover and bathymetry (water depth) that gave the map some good visual contrast. I also wanted a nicer 
+          popup instead of the default white background, so I created an image that looked similar to parchment paper and set that as the popup background. And with those changes,
+          my interactive map for my D&D group was complete.
+        </h4> 
+       </div>
+          </div>
+
+          <div class='container-fluid' align=center>
+            <img style='box-shadow:0px 0px 2px gray; width:50%;' src='images\firstvectormap.gif' >
+              </div>
+      <div class='container-fluid' align=center>
+        <div class='col-xs-11 description'style='padding:25px 0px 25px 0px; float:none;'>
+          <h4>I continued to play around with settings and styles in this map. I added more data like roads and more functionality like a measure tool (at the request of my Dungeon Master). 
+            As I worked, I began to believe that other people could find these maps useful too. <br><br> Maps are already great tools for helping to immerse the user in the landscape being depicted. 
+            This is especially true and arguably more important for maps of imaginary places, since the user cannot actually go there; a map acts as a sort of bridge to bring your mind closer to the fantasy world you're 
+            reading about or playing a game in. I talk about this in <a href="bit.ly/RTthesis">my thesis</a> if you want to find out more about that. But basically, when you engage in a roleplaying
+            game you assume multiple identities (or at least you do according to researcher 
+            <a href="https://blog.ufes.br/kyriafinardi/files/2017/10/What-Video-Games-Have-to-Teach-us-About-Learning-and-Literacy-2003.-ilovepdf-compressed.pdf">James Paul Gee</a> (see chapter 3):<br><br><ul>
+              <li>The identity of the character you're playing, or your <strong><i>virtual identity</i></strong></li>
+              <li>Your personal identity in the real world, or your <strong><i>real identity</i></strong></li>
+              <li>A hybrid identity between you and the character, or your <strong><i>projective identity</i></strong></li>
+            </ul><br>
+            A map can serve each of these identities in different ways, but in the end, I'd argue that an interactive map might be one of the best ways 
+            to support immersion in a fantasy world.
+          </h4> 
+          </div>
+            </div>
+          <div class='col-xs-12 project-button'>
+            <p style='color:#dbcac6; padding:10px;'>Copyright &copy; Ross Thorn 2016-2020</p>
+            <h3><a href='index.html'class='button-text'>HOME</a> // <a href='#header' class='button-text'>TOP</a></h3>
+          </div>
+</body>
+
+	<script type='text/javascript' src='js/jquery-3.1.1.min.js'></script>
+    <script type='text/javascript' src='js/bootstrap.min.js'></script>
+    <script  src='js/includes.js'></script>
+
+</html>
