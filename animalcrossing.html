@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Real World "Fantasy" Map - Ross Thorn</title>
+    <title>Animal Crossing Web Map - Ross Thorn</title>
     <link rel='icon' href='images/Icon.ico'>
     <meta charset=utf-8>
     <link rel='stylesheet' href='css/bootstrap.min.css' />
@@ -28,36 +28,49 @@
 	<div class='container-fluid' align=center>
 
     <div class='col-xs-12 project-page'>
-      <h2>REAL <span style='color:#e67553;'>WORLD</span> "FANTASY" <span style='color:#e67553;'>MAP</span></h2>
+      <h2>ANIMAL <span style='color:#e67553;'>CROSSING</span> WEB <span style='color:#e67553;'>MAP</span></h2>
        </div>
 
       <div class='col-xs-11 description'style='padding-bottom:25px; float:none;'>
-        <h4>Fantasy mapping is an exciting and <a href="https://www.cartographersguild.com/content.php">widely popular</a>
-        branch of cartography. Often among the more art savvy folks, fantasy cartographers create mountain ranges, seas, forests and cities
-        that no one has ever seen! Below are a couple of maps I created for a <i>Dungeons & Dragons</i>
-        world my friend created. While Cardonia is a fictional place,
-        <strong>the landscape below actually exists on Earth!</strong>
+        <h4>In March 2020, Nintendo released the latest installment in the Animal Crossing video game series, <a target="_blank" href="https://www.animal-crossing.com/new-horizons/">Animal Crossing: New Horizons</a>! 
+          I was a big fan of this series when I was playing it on my Nintendo DS 15 years ago and was very excited to get the game! I had been working on releaseing <a href="interactivefantasymaps.html">some interactive fantasy maps</a> 
+          and told myself that I couldn't get this game until they were released.
         <br><br>
-        The "fantasy" maps below are created with real world data. Cardonia is an island that would form in southern Ireland
-        if sea level were to rise about 112 ft. Creating realistic coastlines is one of the hardest challenges of fantasy mapping
-        and can be a painstaking process when done by hand. However, landmasses like the one below can be created in less than
-        15 minutes!
-        <br><br>
-        Hillshades, contour lines, and even watersheds can be generated for the fantasy world as long as the data is available.
-        The geology always makes sense as well. I looked at the topography and found areas where it looked as though rivers and
-        lakes could exist, and then just Bob Ross'd a few happy little waterbodies in for a more realistic and interesting landscape.
-        These maps are super fun and simple to make. Check out <a href="https://www.youtube.com/watch?v=5ByYLeTls2Q" target="_blank">my tutorial</a> to learn how to
-        make a fantasy world of your own!</h4>
+        Once I released the maps and rewarded myself with the game, I thought it would be cool to create an interactive map for my island in the game! I had been playing around with some 3D extrusions in <a target="_blank" href="https://www.mapbox.com">Mapbox</a> 
+        which would be perfect for representing the tiered topography in Animal Crossing!</h4>
        </div>
     </div>
 
     <div class='container-fluid' align=center>
-        <img style='box-shadow:0px 0px 2px gray; width:80%;' src='images\Cardonia_Final_xs.png' >
+        <img style='box-shadow:0px 0px 2px gray; width:50%;' src='images\krunkel_base.jpg' >
           </div>
 
-          <div class='container-fluid' align=center>
-              <img style='box-shadow:0px 0px 2px gray; width:80%; margin-top: 20px;' src='images\XS_Cardonia_Topography_New.png' >
-                </div>
+    <div class='container-fluid' align=center>
+      <div class='col-xs-11 description'style='padding:25px 0px 25px 0px; float:none;'>
+      <h4>First, I grabbed a screenshot from the game and brought it into <a target="_blank" href="https://www.qgis.org">QGIS</a> to give it some coordinates. That way, when I digitize the boundaries, 
+        Mapbox can actually place them somewhere on the Earth's surface so it can render it. Once I had all the features digitized, I could upload it as a <a target="_blank" href="https://docs.mapbox.com/vector-tiles/reference/">vector tileset</a> 
+        to create a web map! I traced the landmass, waterbodies, infrastructure, and other geographical features and it was ready to go. One of the things I had to keep in mind that with the default Mapbox styling, I wouldn't be able to get the 
+        iconic appearance of the tiered topography with a tan cliff and a green, grassy surface. This is because 
+      </h4>
+      </div>
+    </div>
+
+    <div class='container-fluid' align=center>
+        <img style='box-shadow:0px 0px 2px gray; width:80%; margin-top: 20px;' src='images\krunkel.gif' >
+          </div>
+
+    <div class='container-fluid' align=center>
+      <div class='col-xs-11 description'style='padding:25px 0px 25px 0px; float:none;'>
+      <h4>One of the things I had to keep in mind was that with the default Mapbox styling, I wouldn't be able to get the 
+        iconic appearance of the tiered topography with a tan cliff and a green, grassy surface. This is because extruded features in Mapbox only allow for a single color for the entirety of the polygon. My workaround was to create a very small buffer 
+        on all of the plateaus so that I could style that to look like a shear cliff face. I also added a seamless SVG texture to the grass to replicate the iconic pattern from the actual game.
+        <br><br>
+        This was a super fun project to work on, both topically and because I learned a bit more about dealing with three-dimensional visualization in Mapbox. 
+        I hope to add more to it in the future, maybe including fruit tree locations and 3D buildings. You can interact with the map <a target="_blank" href="https://www.redgiantmaps.com/maps/krunkel">here</a>!
+      </h4>
+      </div>
+    </div>
+
           <div class='col-xs-12 project-button'>
             <p style='color:#dbcac6; padding:10px;'>Copyright &copy; Ross Thorn 2016-2020</p>
             <h3><a href='index.html'class='button-text'>HOME</a> // <a href='#header' class='button-text'>TOP</a></h3>
