@@ -176,12 +176,12 @@ font-size: 7em;
   text-align: center;
 }
 
-.russian-frame{
+.russian-img{
   position: inherit;
   vertical-align:middle;
   align: center;
   margin-left: 20%;
-  height:700px;
+  max-height:700px;
   width: 60%;
   margin-bottom: 50px;
 }
